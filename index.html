@@ -5,38 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- GOOGLE SEO META -->
-    <title>Class BMW Özel Servis | Şanlıurfa BMW, Audi, Mercedes & Land Rover Bakım & Onarım</title>
+    <title>Class BMW Özel Servis | Şanlıurfa BMW, Audi, Mercedes & Land Rover Bakım</title>
     <meta name="description" content="Şanlıurfa Evren Sanayi Sitesi'nde Class BMW Özel Servis. İbrahim Usta ve Zeki Usta güvencesiyle BMW, Porsche, Audi, Mercedes ve Land Rover orijinal bakım, mekanik ve bilgisayarlı arıza tespiti.">
-    <meta name="keywords" content="Şanlıurfa BMW servisi, Class BMW, İbrahim Usta BMW, Şanlıurfa Audi servisi, Şanlıurfa Mercedes tamiri, Land Rover servis Şanlıurfa, Evren sanayi BMW ustası, Eyyübiye oto tamir">
-    <meta name="author" content="Class BMW Özel Servis">
-    <meta name="robots" content="index, follow">
-
-    <!-- OPEN GRAPH -->
-    <meta property="og:title" content="Class BMW Özel Servis | Şanlıurfa">
-    <meta property="og:description" content="BMW, Audi, Mercedes, Porsche ve Land Rover araçlarınız için profesyonel bakım ve tamir hizmeti.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://classbmw.com">
-    <meta property="og:image" content="1.jpeg">
-
-    <!-- RESMİ OTOMOTİV FONTLARI (Outfit + Plus Jakarta Sans) -->
+    <meta name="keywords" content="Şanlıurfa BMW servisi, Class BMW, İbrahim Usta BMW, Şanlıurfa Audi servisi, Şanlıurfa Mercedes tamiri, Land Rover servis Şanlıurfa, Evren sanayi BMW ustası">
+    
+    <!-- FONTLAR (Outfit + Plus Jakarta Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:ital,wght@0,400;0,600;0,800;0,900;1,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         /* RESMİ BMW & BMW ///M KODLARI */
         :root {
-            --m-light-blue: #008AC9;   /* ///M Açık Mavi */
-            --m-dark-blue: #003D78;    /* ///M Koyu Mavi / Gece Laciverti */
-            --m-red: #E7222E;          /* ///M Yarış Kırmızısı */
-            --bmw-core-blue: #0066B1;  /* BMW Klasik Logo Mavisi */
+            --m-light-blue: #008AC9;
+            --m-dark-blue: #003D78;
+            --m-red: #E7222E;
+            --bmw-core-blue: #0066B1;
             
             --bg-deep: #080A0E;
             --bg-surface: #10141C;
             --bg-card: #151A24;
             --border-subtle: rgba(255, 255, 255, 0.08);
-            --border-hover: rgba(0, 138, 201, 0.35);
             
             --text-main: #F3F5F7;
             --text-muted: #8E99A8;
@@ -53,7 +43,7 @@
             -webkit-font-smoothing: antialiased;
         }
         
-        h1, h2, h3, h4, .font-heading { 
+        h1, h2, h3, h4 { 
             font-family: 'Outfit', sans-serif; 
             color: #fff;
             letter-spacing: -0.02em;
@@ -62,186 +52,110 @@
         a { text-decoration: none; color: inherit; transition: var(--transition-smooth); }
         img { width: 100%; display: block; object-fit: cover; }
 
-        /* ///M TRICOLOR ÇİZGİ DEKORASYONU */
+        /* ///M TRICOLOR ÜST BANT */
         .m-tricolor-bar {
-            height: 3px;
-            width: 100%;
-            background: linear-gradient(90deg, 
-                var(--m-light-blue) 0%, var(--m-light-blue) 33.3%, 
-                var(--m-dark-blue) 33.3%, var(--m-dark-blue) 66.6%, 
-                var(--m-red) 66.6%, var(--m-red) 100%
-            );
+            height: 3px; width: 100%;
+            background: linear-gradient(90deg, var(--m-light-blue) 0%, var(--m-light-blue) 33.3%, var(--m-dark-blue) 33.3%, var(--m-dark-blue) 66.6%, var(--m-red) 66.6%, var(--m-red) 100%);
         }
 
-        /* HEADER */
+        /* HEADER & YENİ LOGO TASARIMI */
         header { 
             background-color: rgba(8, 10, 14, 0.94); 
             backdrop-filter: blur(14px); 
-            position: sticky; 
-            top: 0; 
-            z-index: 1000; 
+            position: sticky; top: 0; z-index: 1000; 
             border-bottom: 1px solid var(--border-subtle); 
         }
         .nav-container { 
-            max-width: 1240px; 
-            margin: 0 auto; 
-            padding: 16px 24px; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
+            max-width: 1240px; margin: 0 auto; padding: 16px 24px; 
+            display: flex; justify-content: space-between; align-items: center; 
         }
         
-        /* LOGO */
-        .logo-wrap { display: flex; align-items: center; gap: 8px; }
+        /* LOGO ALANI */
+        .logo-wrap { display: flex; align-items: center; gap: 12px; }
+        
+        /* M Amblemi (CSS ile çizim) */
+        .m-stripe-logo {
+            display: flex;
+            gap: 3px;
+            transform: skewX(-20deg); /* Orijinal açılı duruş */
+        }
+        .m-stripe-logo div {
+            width: 8px;
+            height: 24px;
+            border-radius: 1px;
+        }
+        .m-s-1 { background-color: var(--m-light-blue); }
+        .m-s-2 { background-color: var(--m-dark-blue); }
+        .m-s-3 { background-color: var(--m-red); }
+
         .logo { 
             font-family: 'Outfit', sans-serif; 
             font-size: 26px; 
             font-weight: 900; 
-            letter-spacing: 2px; 
+            letter-spacing: 1px; 
             text-transform: uppercase;
+            font-style: italic; /* Spor görünüm */
+            color: #fff;
         }
-        .logo span.m-text {
-            display: inline-flex;
-            margin-left: 4px;
-        }
-        .m-lblue { color: var(--m-light-blue); }
-        .m-dblue { color: #3a86ff; }
-        .m-crimson { color: var(--m-red); }
+        .logo span { color: #cbd5e1; font-weight: 800; }
         
+        /* MENÜ LİNKLERİ VE BUTONLAR */
         .nav-links { display: flex; gap: 28px; font-size: 0.95rem; font-weight: 500; }
         .nav-links a:hover { color: var(--m-light-blue); }
         
         .header-actions { display: flex; align-items: center; gap: 10px; }
         .btn-social-mini { 
-            width: 38px; 
-            height: 38px; 
-            border-radius: 8px; 
-            display: inline-flex; 
-            align-items: center; 
-            justify-content: center; 
-            font-size: 1.05rem; 
-            color: #fff;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid var(--border-subtle);
-            transition: var(--transition-smooth);
+            width: 38px; height: 38px; border-radius: 8px; 
+            display: inline-flex; align-items: center; justify-content: center; 
+            font-size: 1.05rem; color: #fff; background: rgba(255,255,255,0.05);
+            border: 1px solid var(--border-subtle); transition: var(--transition-smooth);
         }
         .btn-social-mini:hover { border-color: var(--m-light-blue); transform: translateY(-2px); }
-        .btn-social-mini.insta:hover { color: #E1306C; }
-        .btn-social-mini.tiktok:hover { color: #00f2fe; }
-
         .btn-call-nav { 
             background: linear-gradient(135deg, var(--bmw-core-blue), var(--m-dark-blue)); 
-            color: #fff; 
-            padding: 10px 20px; 
-            border-radius: 8px; 
-            font-weight: 600; 
-            font-size: 0.9rem; 
-            display: inline-flex; 
-            align-items: center; 
-            gap: 8px;
-            box-shadow: 0 4px 14px rgba(0, 102, 177, 0.25);
+            color: #fff; padding: 10px 20px; border-radius: 8px; font-weight: 600; 
+            font-size: 0.9rem; display: inline-flex; align-items: center; gap: 8px;
         }
         .btn-call-nav:hover { opacity: 0.95; transform: translateY(-1px); }
 
         /* HERO BÖLÜMÜ */
         .hero { 
-            position: relative; 
-            padding: 120px 20px 100px; 
-            text-align: center; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            min-height: 80vh; 
+            position: relative; padding: 120px 20px 100px; text-align: center; 
+            display: flex; justify-content: center; align-items: center; min-height: 80vh; 
         }
         .hero::before { 
-            content: ""; 
-            position: absolute; 
-            inset: 0; 
+            content: ""; position: absolute; inset: 0; 
             background: linear-gradient(180deg, rgba(8, 10, 14, 0.72) 0%, rgba(8, 10, 14, 0.94) 100%), url('2.jpeg') center/cover no-repeat; 
             z-index: 0; 
         }
         .hero-content { position: relative; z-index: 1; max-width: 900px; }
         
         .brands-pill { 
-            display: inline-flex; 
-            gap: 14px; 
-            background: rgba(16, 20, 28, 0.7); 
-            backdrop-filter: blur(10px);
-            padding: 8px 22px; 
-            border-radius: 50px; 
-            border: 1px solid var(--border-subtle); 
-            margin-bottom: 26px; 
-            font-size: 0.85rem; 
-            font-weight: 700; 
-            letter-spacing: 1.5px; 
-            color: var(--text-main); 
-            flex-wrap: wrap; 
-            justify-content: center; 
+            display: inline-flex; gap: 14px; background: rgba(16, 20, 28, 0.7); backdrop-filter: blur(10px);
+            padding: 8px 22px; border-radius: 50px; border: 1px solid var(--border-subtle); 
+            margin-bottom: 26px; font-size: 0.85rem; font-weight: 700; letter-spacing: 1.5px; 
+            color: var(--text-main); flex-wrap: wrap; justify-content: center; 
         }
         .brands-pill span.dot { color: var(--m-light-blue); }
         
-        .hero h1 { 
-            font-size: 3.4rem; 
-            line-height: 1.15; 
-            font-weight: 800; 
-            margin-bottom: 22px; 
-            text-transform: uppercase;
-        }
-        .hero h1 span.highlight {
-            background: linear-gradient(90deg, #FFFFFF 0%, #CCD9E8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .hero p { 
-            font-size: 1.15rem; 
-            color: var(--text-muted); 
-            max-width: 720px; 
-            margin: 0 auto 36px; 
-            font-weight: 400;
-        }
+        .hero h1 { font-size: 3.4rem; line-height: 1.15; font-weight: 800; margin-bottom: 22px; text-transform: uppercase; }
+        .hero p { font-size: 1.15rem; color: var(--text-muted); max-width: 720px; margin: 0 auto 36px; font-weight: 400; }
         
         .hero-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
         .btn-action { 
-            padding: 14px 26px; 
-            border-radius: 8px; 
-            font-weight: 600; 
-            display: inline-flex; 
-            align-items: center; 
-            gap: 10px; 
-            font-size: 0.95rem; 
-            transition: var(--transition-smooth);
+            padding: 14px 26px; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; 
+            gap: 10px; font-size: 0.95rem; transition: var(--transition-smooth);
         }
-        .btn-action.wa { 
-            background: #25D366; 
-            color: #fff; 
-            box-shadow: 0 4px 16px rgba(37, 211, 102, 0.25); 
-        }
-        .btn-action.phone { 
-            background: linear-gradient(135deg, var(--bmw-core-blue), var(--m-dark-blue)); 
-            color: #fff; 
-            box-shadow: 0 4px 16px rgba(0, 102, 177, 0.3);
-        }
-        .btn-action.outline { 
-            background: rgba(255, 255, 255, 0.05); 
-            border: 1px solid var(--border-subtle); 
-            color: #fff; 
-        }
+        .btn-action.wa { background: #25D366; color: #fff; }
+        .btn-action.phone { background: linear-gradient(135deg, var(--bmw-core-blue), var(--m-dark-blue)); color: #fff; }
+        .btn-action.outline { background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-subtle); color: #fff; }
         .btn-action:hover { transform: translateY(-2px); opacity: 0.95; }
 
         /* BÖLÜMLER */
         .section { padding: 90px 20px; }
         .container { max-width: 1240px; margin: 0 auto; }
-        
         .section-header { text-align: center; margin-bottom: 54px; }
-        .section-badge { 
-            font-size: 0.8rem; 
-            font-weight: 800; 
-            letter-spacing: 2px; 
-            color: var(--m-light-blue); 
-            text-transform: uppercase; 
-            margin-bottom: 8px; 
-            display: inline-block;
-        }
+        .section-badge { font-size: 0.8rem; font-weight: 800; letter-spacing: 2px; color: var(--m-light-blue); text-transform: uppercase; margin-bottom: 8px; display: inline-block; }
         .section-header h2 { font-size: 2.4rem; font-weight: 800; margin-bottom: 12px; }
         .section-header p { color: var(--text-muted); font-size: 1.05rem; max-width: 600px; margin: 0 auto; }
 
@@ -251,122 +165,47 @@
         .about-text p { color: var(--text-muted); margin-bottom: 20px; font-size: 1.05rem; }
         
         .mechanic-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 30px; }
-        .m-card { 
-            background: var(--bg-surface); 
-            border: 1px solid var(--border-subtle); 
-            padding: 18px 20px; 
-            border-radius: 10px; 
-            position: relative;
-            overflow: hidden;
-        }
-        .m-card::before {
-            content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 4px;
-            background: var(--m-light-blue);
-        }
+        .m-card { background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 18px 20px; border-radius: 10px; position: relative; overflow: hidden; }
+        .m-card::before { content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 4px; background: var(--m-light-blue); }
         .m-card.chief::before { background: var(--m-red); }
         .m-card h4 { font-size: 1.1rem; margin-bottom: 4px; }
         .m-card p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 6px; }
         .m-card a { font-weight: 700; color: #fff; font-size: 0.95rem; }
         .m-card a:hover { color: var(--m-light-blue); }
 
-        .about-img-box { 
-            border-radius: 12px; 
-            overflow: hidden; 
-            border: 1px solid var(--border-subtle); 
-            height: 420px; 
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-        }
+        .about-img-box { border-radius: 12px; overflow: hidden; border: 1px solid var(--border-subtle); height: 420px; }
         .about-img-box img { height: 100%; }
 
         /* HİZMETLER */
         .services-section { background-color: var(--bg-surface); }
         .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 26px; }
-        .service-card { 
-            background-color: var(--bg-card); 
-            border-radius: 12px; 
-            overflow: hidden; 
-            border: 1px solid var(--border-subtle); 
-            transition: var(--transition-smooth); 
-            display: flex; 
-            flex-direction: column; 
-        }
-        .service-card:hover { 
-            border-color: var(--border-hover); 
-            transform: translateY(-6px); 
-            box-shadow: 0 16px 32px rgba(0,0,0,0.4);
-        }
+        .service-card { background-color: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid var(--border-subtle); transition: var(--transition-smooth); display: flex; flex-direction: column; }
+        .service-card:hover { border-color: rgba(0, 138, 201, 0.35); transform: translateY(-6px); }
         .service-card-media { height: 220px; position: relative; }
         .service-card-media img { height: 100%; }
         .service-card-body { padding: 28px; flex-grow: 1; }
         .service-card-body h3 { font-size: 1.3rem; margin-bottom: 12px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
-        .service-card-body h3 i { color: var(--m-light-blue); font-size: 1.15rem; }
+        .service-card-body h3 i { color: var(--m-light-blue); }
         .service-card-body p { color: var(--text-muted); font-size: 0.95rem; }
 
         /* İLETİŞİM */
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
         .contact-cards-col { display: flex; flex-direction: column; gap: 18px; }
-        .contact-box { 
-            background: var(--bg-card); 
-            border: 1px solid var(--border-subtle); 
-            padding: 22px 24px; 
-            border-radius: 10px; 
-            display: flex; 
-            gap: 18px; 
-            align-items: flex-start; 
-        }
-        .contact-icon { 
-            width: 46px; 
-            height: 46px; 
-            border-radius: 10px; 
-            background: rgba(0, 138, 201, 0.1); 
-            color: var(--m-light-blue); 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            font-size: 1.3rem; 
-            flex-shrink: 0;
-        }
-        .contact-box.social-box .contact-icon.insta { background: rgba(225, 48, 108, 0.1); color: #E1306C; }
+        .contact-box { background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 22px 24px; border-radius: 10px; display: flex; gap: 18px; align-items: flex-start; }
+        .contact-icon { width: 46px; height: 46px; border-radius: 10px; background: rgba(0, 138, 201, 0.1); color: var(--m-light-blue); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
         .contact-box.social-box .contact-icon.tiktok { background: rgba(255, 255, 255, 0.1); color: #fff; }
         .contact-box h4 { font-size: 1.1rem; margin-bottom: 4px; }
         .contact-box p { color: var(--text-muted); font-size: 0.95rem; }
         
-        .contact-media-box { 
-            border-radius: 12px; 
-            overflow: hidden; 
-            border: 1px solid var(--border-subtle); 
-            height: 100%; 
-            min-height: 420px; 
-        }
+        .contact-media-box { border-radius: 12px; overflow: hidden; border: 1px solid var(--border-subtle); height: 100%; min-height: 420px; }
         .contact-media-box img { height: 100%; }
 
         /* FLOATING WHATSAPP */
-        .floating-wa-btn { 
-            position: fixed; 
-            bottom: 26px; 
-            right: 26px; 
-            background: #25D366; 
-            color: #fff; 
-            width: 62px; 
-            height: 62px; 
-            border-radius: 50%; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            font-size: 32px; 
-            box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35); 
-            z-index: 999; 
-            transition: var(--transition-smooth);
-        }
+        .floating-wa-btn { position: fixed; bottom: 26px; right: 26px; background: #25D366; color: #fff; width: 62px; height: 62px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35); z-index: 999; transition: var(--transition-smooth); }
         .floating-wa-btn:hover { transform: scale(1.1); }
 
         /* FOOTER */
-        footer { 
-            background-color: #050608; 
-            border-top: 1px solid var(--border-subtle); 
-            padding: 40px 20px; 
-            text-align: center; 
-        }
+        footer { background-color: #050608; border-top: 1px solid var(--border-subtle); padding: 40px 20px; text-align: center; }
         .footer-social-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 20px; font-size: 1.3rem; }
         .footer-social-links a { color: var(--text-muted); }
         .footer-social-links a:hover { color: #fff; }
@@ -419,19 +258,26 @@
     <!-- NAVBAR -->
     <header>
         <div class="nav-container">
+            <!-- YENİ LOGO -->
             <div class="logo-wrap">
-                <a href="#" class="logo">CLASS <span class="m-text"><span class="m-lblue">B</span><span class="m-dblue">M</span><span class="m-crimson">W</span></span></a>
+                <div class="m-stripe-logo">
+                    <div class="m-s-1"></div>
+                    <div class="m-s-2"></div>
+                    <div class="m-s-3"></div>
+                </div>
+                <a href="#" class="logo">CLASS <span>BMW</span></a>
             </div>
+            
             <nav class="nav-links">
                 <a href="#hakkimizda">Hakkımızda</a>
                 <a href="#hizmetler">Hizmetlerimiz</a>
                 <a href="#iletisim">İletişim & Konum</a>
             </nav>
             <div class="header-actions">
-                <a href="https://www.instagram.com/class_bmw_urfa" target="_blank" class="btn-social-mini insta" title="Instagram" aria-label="Instagram">
+                <a href="https://www.instagram.com/class_bmw_urfa" target="_blank" class="btn-social-mini" title="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://www.tiktok.com/@yayla6363" target="_blank" class="btn-social-mini tiktok" title="TikTok" aria-label="TikTok">
+                <a href="https://www.tiktok.com/@yayla6363" target="_blank" class="btn-social-mini" title="TikTok">
                     <i class="fab fa-tiktok"></i>
                 </a>
                 <a href="tel:+905423031535" class="btn-call-nav"><i class="fas fa-phone-alt"></i> 0542 303 15 35</a>
@@ -450,7 +296,7 @@
                     <span>MERCEDES</span> <span class="dot">•</span>
                     <span>LAND ROVER</span>
                 </div>
-                <h1>Şanlıurfa'da Üst Segment <br><span class="highlight">Araç Bakım & Onarımı</span></h1>
+                <h1>Şanlıurfa'da Üst Segment <br>Araç Bakım & Onarımı</h1>
                 <p>Evren Sanayi Sitesi'nde orijinal arıza tespiti, garantili periyodik bakım ve kusursuz mekanik revizyon çözümleri.</p>
                 <div class="hero-actions">
                     <a href="https://wa.me/905423031535" class="btn-action wa" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp'tan Yazın</a>
@@ -564,14 +410,6 @@
                             <div>
                                 <h4>TikTok Kanalımız</h4>
                                 <p><a href="https://www.tiktok.com/@yayla6363" target="_blank" style="color: #fff; font-weight: 600;">@yayla6363</a> — Atölye içi çalışma ve tamir videolarımızı takip edin.</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-box social-box">
-                            <div class="contact-icon insta"><i class="fab fa-instagram"></i></div>
-                            <div>
-                                <h4>Instagram Hesabımız</h4>
-                                <p><a href="https://www.instagram.com/class_bmw_urfa" target="_blank" style="color: #E1306C; font-weight: 600;">@class_bmw_urfa</a> — Servisteki araç ve işçilik güncellemelerimiz.</p>
                             </div>
                         </div>
 
