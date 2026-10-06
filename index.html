@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- GOOGLE SEO META -->
-    <title>Class BMW Özel Servis | Şanlıurfa BMW, Audi, Mercedes & Land Rover Bakım & Onarım</title>
-    <meta name="description" content="Şanlıurfa Evren Sanayi Sitesi'nde Class BMW Özel Servis. İbrahim Usta ve Zeki Usta güvencesiyle BMW, Porsche, Audi, Mercedes ve Land Rover orijinal bakım, mekanik ve bilgisayarlı arıza tespiti.">
-    <meta name="keywords" content="Şanlıurfa BMW servisi, Class BMW, İbrahim Usta BMW, Şanlıurfa Audi servisi, Şanlıurfa Mercedes tamiri, Land Rover servis Şanlıurfa, Evren sanayi BMW ustası, Eyyübiye oto tamir">
+    <title>Class BMW & Premium Özel Servis | Şanlıurfa BMW, Mercedes, Porsche, Audi, Land Rover</title>
+    <meta name="description" content="Şanlıurfa Evren Sanayi Sitesi'nde Class BMW Özel Servis ve Yedek Parça. İbrahim Usta ve Zeki Usta ile BMW, Mercedes-Benz, Porsche, Audi ve Land Rover orijinal yedek parça, periyodik bakım ve arıza tespiti.">
+    <meta name="keywords" content="Şanlıurfa BMW servisi, Class BMW, Şanlıurfa Mercedes servisi, Şanlıurfa Land Rover ustası, Audi özel servis Urfa, Porsche bakım Şanlıurfa, Evren sanayi oto yedek parça">
     <meta name="author" content="Class BMW Özel Servis">
     <meta name="robots" content="index, follow">
 
+    <!-- BMW MOTORSPORT 50. YIL VEKTÖREL FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23ffffff' stroke='%23080a0e' stroke-width='3'/%3E%3Cpath d='M50 8 A42 42 0 0 1 92 50 L77 50 A27 27 0 0 0 50 23 Z' fill='%23008AC9'/%3E%3Cpath d='M92 50 A42 42 0 0 1 50 92 L50 77 A27 27 0 0 0 77 50 Z' fill='%2316588E'/%3E%3Cpath d='M50 92 A42 42 0 0 1 8 50 L23 50 A27 27 0 0 0 50 77 Z' fill='%23E7222E'/%3E%3Cpath d='M8 50 A42 42 0 0 1 50 8 L50 23 A27 27 0 0 0 23 50 Z' fill='%23008AC9'/%3E%3Ccircle cx='50' cy='50' r='25' fill='%23080a0e' stroke='%23ffffff' stroke-width='2'/%3E%3Cpath d='M50 27 A23 23 0 0 1 73 50 L50 50 Z' fill='%230066B1'/%3E%3Cpath d='M50 50 L27 50 A23 23 0 0 1 50 27 Z' fill='%23ffffff'/%3E%3Cpath d='M50 50 L50 73 A23 23 0 0 1 27 50 Z' fill='%230066B1'/%3E%3Cpath d='M50 50 L73 50 A23 23 0 0 1 50 73 Z' fill='%23ffffff'/%3E%3Ccircle cx='50' cy='50' r='23' fill='none' stroke='%23080a0e' stroke-width='1.5'/%3E%3C/svg%3E">
+
     <!-- OPEN GRAPH -->
-    <meta property="og:title" content="Class BMW Özel Servis | Şanlıurfa">
-    <meta property="og:description" content="BMW, Audi, Mercedes, Porsche ve Land Rover araçlarınız için profesyonel bakım ve tamir hizmeti.">
+    <meta property="og:title" content="Class BMW & Premium Özel Servis | Şanlıurfa">
+    <meta property="og:description" content="BMW, Mercedes-Benz, Porsche, Audi ve Land Rover için garantili servis ve orijinal yedek parça.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://classbmw.com">
     <meta property="og:image" content="1.jpeg">
@@ -21,14 +24,13 @@
     <!-- FONTLAR (Outfit + Plus Jakarta Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:ital,wght@0,400;0,600;0,800;0,900;1,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* RESMİ BMW & BMW ///M KODLARI */
         :root {
             --m-light-blue: #008AC9;
-            --m-dark-blue: #003D78;
+            --m-dark-blue: #16588E;
             --m-red: #E7222E;
             --bmw-core-blue: #0066B1;
             
@@ -36,6 +38,7 @@
             --bg-surface: #10141C;
             --bg-card: #151A24;
             --border-subtle: rgba(255, 255, 255, 0.08);
+            --border-hover: rgba(0, 138, 201, 0.35);
             
             --text-main: #F3F5F7;
             --text-muted: #8E99A8;
@@ -85,7 +88,7 @@
         .nav-container { 
             max-width: 1240px; 
             margin: 0 auto; 
-            padding: 16px 24px; 
+            padding: 14px 24px; 
             display: flex; 
             justify-content: space-between; 
             align-items: center; 
@@ -93,31 +96,34 @@
         
         .logo-wrap { display: flex; align-items: center; gap: 12px; }
         
-        /* M Amblemi */
-        .m-stripe-logo {
-            display: flex;
-            gap: 3px;
-            transform: skewX(-20deg);
+        /* 50. YIL AMBLEMİ (SVG İKON) */
+        .logo-50th {
+            width: 36px;
+            height: 36px;
+            flex-shrink: 0;
+            filter: drop-shadow(0 2px 8px rgba(0, 138, 201, 0.35));
         }
-        .m-stripe-logo div {
-            width: 8px;
-            height: 24px;
-            border-radius: 1px;
-        }
-        .m-s-1 { background-color: var(--m-light-blue); }
-        .m-s-2 { background-color: var(--m-dark-blue); }
-        .m-s-3 { background-color: var(--m-red); }
 
+        .logo-text-box { display: flex; flex-direction: column; }
         .logo { 
             font-family: 'Outfit', sans-serif; 
-            font-size: 26px; 
+            font-size: 24px; 
             font-weight: 900; 
-            letter-spacing: 1px; 
+            letter-spacing: 1.5px; 
             text-transform: uppercase;
             font-style: italic;
             color: #fff;
+            line-height: 1;
         }
-        .logo span { color: #cbd5e1; font-weight: 800; }
+        .logo span { color: var(--text-muted); font-weight: 700; }
+        .logo-sub {
+            font-size: 0.65rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--m-light-blue);
+            font-weight: 700;
+            margin-top: 3px;
+        }
         
         .nav-links { display: flex; gap: 28px; font-size: 0.95rem; font-weight: 500; }
         .nav-links a:hover { color: var(--m-light-blue); }
@@ -132,7 +138,7 @@
             justify-content: center; 
             font-size: 1.05rem; 
             color: #fff; 
-            background: rgba(255,255,255,0.05);
+            background: rgba(255,255,255,0.05); 
             border: 1px solid var(--border-subtle); 
             transition: var(--transition-smooth);
         }
@@ -154,7 +160,7 @@
         /* HERO BÖLÜMÜ */
         .hero { 
             position: relative; 
-            padding: 120px 20px 100px; 
+            padding: 110px 20px 90px; 
             text-align: center; 
             display: flex; 
             justify-content: center; 
@@ -168,38 +174,60 @@
             background: linear-gradient(180deg, rgba(8, 10, 14, 0.72) 0%, rgba(8, 10, 14, 0.94) 100%), url('2.jpeg') center/cover no-repeat; 
             z-index: 0; 
         }
-        .hero-content { position: relative; z-index: 1; max-width: 900px; }
+        .hero-content { position: relative; z-index: 1; max-width: 920px; }
         
-        .brands-pill { 
-            display: inline-flex; 
-            gap: 14px; 
-            background: rgba(16, 20, 28, 0.7); 
+        .badge-50th {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(16, 20, 28, 0.85);
             backdrop-filter: blur(10px);
-            padding: 8px 22px; 
-            border-radius: 50px; 
-            border: 1px solid var(--border-subtle); 
-            margin-bottom: 26px; 
-            font-size: 0.85rem; 
-            font-weight: 700; 
-            letter-spacing: 1.5px; 
-            color: var(--text-main); 
-            flex-wrap: wrap; 
-            justify-content: center; 
+            padding: 8px 20px;
+            border-radius: 50px;
+            border: 1px solid var(--border-subtle);
+            margin-bottom: 24px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            color: var(--text-main);
         }
-        .brands-pill span.dot { color: var(--m-light-blue); }
+        .badge-50th img { width: 22px; height: 22px; display: inline-block; }
+
+        .brands-grid-hero {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+        .brand-chip {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-subtle);
+            padding: 5px 14px;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #fff;
+        }
         
         .hero h1 { 
-            font-size: 3.4rem; 
+            font-size: 3.3rem; 
             line-height: 1.15; 
-            font-weight: 800; 
-            margin-bottom: 22px; 
+            font-weight: 900; 
+            margin-bottom: 18px; 
             text-transform: uppercase; 
+        }
+        .hero h1 span.highlight {
+            background: linear-gradient(90deg, #FFFFFF 0%, #A9C6E8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .hero p { 
             font-size: 1.15rem; 
             color: var(--text-muted); 
-            max-width: 720px; 
-            margin: 0 auto 36px; 
+            max-width: 740px; 
+            margin: 0 auto 34px; 
             font-weight: 400; 
         }
         
@@ -233,14 +261,24 @@
             display: inline-block; 
         }
         .section-header h2 { font-size: 2.4rem; font-weight: 800; margin-bottom: 12px; }
-        .section-header p { color: var(--text-muted); font-size: 1.05rem; max-width: 600px; margin: 0 auto; }
+        .section-header p { color: var(--text-muted); font-size: 1.05rem; max-width: 650px; margin: 0 auto; }
 
         /* HAKKIMIZDA */
         .about-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
         .about-text h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 20px; }
-        .about-text p { color: var(--text-muted); margin-bottom: 20px; font-size: 1.05rem; }
+        .about-text p { color: var(--text-muted); margin-bottom: 16px; font-size: 1.05rem; }
         
-        .mechanic-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 30px; }
+        .specialty-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+        .specialty-tags span {
+            background: rgba(0, 138, 201, 0.1);
+            color: var(--m-light-blue);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .mechanic-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
         .m-card { 
             background: var(--bg-surface); 
             border: 1px solid var(--border-subtle); 
@@ -260,13 +298,13 @@
             border-radius: 12px; 
             overflow: hidden; 
             border: 1px solid var(--border-subtle); 
-            height: 420px; 
+            height: 440px; 
         }
         .about-img-box img { height: 100%; }
 
         /* HİZMETLER */
         .services-section { background-color: var(--bg-surface); }
-        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 26px; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
         .service-card { 
             background-color: var(--bg-card); 
             border-radius: 12px; 
@@ -276,48 +314,48 @@
             display: flex; 
             flex-direction: column; 
         }
-        .service-card:hover { border-color: rgba(0, 138, 201, 0.35); transform: translateY(-6px); }
-        .service-card-media { height: 220px; position: relative; }
+        .service-card:hover { border-color: var(--border-hover); transform: translateY(-6px); }
+        .service-card-media { height: 210px; position: relative; }
         .service-card-media img { height: 100%; }
-        .service-card-body { padding: 28px; flex-grow: 1; }
-        .service-card-body h3 { font-size: 1.3rem; margin-bottom: 12px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+        .service-card-body { padding: 24px; flex-grow: 1; }
+        .service-card-body h3 { font-size: 1.25rem; margin-bottom: 10px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
         .service-card-body h3 i { color: var(--m-light-blue); }
-        .service-card-body p { color: var(--text-muted); font-size: 0.95rem; }
+        .service-card-body p { color: var(--text-muted); font-size: 0.92rem; }
 
         /* İLETİŞİM */
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-        .contact-cards-col { display: flex; flex-direction: column; gap: 18px; }
+        .contact-cards-col { display: flex; flex-direction: column; gap: 16px; }
         .contact-box { 
             background: var(--bg-card); 
             border: 1px solid var(--border-subtle); 
-            padding: 22px 24px; 
+            padding: 20px 22px; 
             border-radius: 10px; 
             display: flex; 
-            gap: 18px; 
+            gap: 16px; 
             align-items: flex-start; 
         }
         .contact-icon { 
-            width: 46px; 
-            height: 46px; 
+            width: 44px; 
+            height: 44px; 
             border-radius: 10px; 
             background: rgba(0, 138, 201, 0.1); 
             color: var(--m-light-blue); 
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            font-size: 1.3rem; 
+            font-size: 1.25rem; 
             flex-shrink: 0; 
         }
         .contact-box.social-box .contact-icon.tiktok { background: rgba(255, 255, 255, 0.1); color: #fff; }
-        .contact-box h4 { font-size: 1.1rem; margin-bottom: 4px; }
-        .contact-box p { color: var(--text-muted); font-size: 0.95rem; }
+        .contact-box h4 { font-size: 1.05rem; margin-bottom: 4px; }
+        .contact-box p { color: var(--text-muted); font-size: 0.92rem; }
         
         .contact-media-box { 
             border-radius: 12px; 
             overflow: hidden; 
             border: 1px solid var(--border-subtle); 
             height: 100%; 
-            min-height: 420px; 
+            min-height: 440px; 
         }
         .contact-media-box img { height: 100%; }
 
@@ -362,29 +400,31 @@
             .mechanic-cards { grid-template-columns: 1fr; }
         }
 
-        /* DAR EKRANLI TELEFONLAR (iPhone, Samsung vb.) */
+        /* DAR EKRANLI TELEFONLAR */
         @media (max-width: 600px) {
             .nav-container { padding: 12px 16px; }
-            .logo { font-size: 20px; }
-            .m-stripe-logo div { width: 6px; height: 18px; }
-            .btn-call-nav { padding: 8px 12px; font-size: 0.82rem; }
-            
+            .logo { font-size: 19px; }
+            .logo-50th { width: 30px; height: 30px; }
+            .btn-call-nav { padding: 8px 12px; font-size: 0.8rem; }
             .header-actions .btn-social-mini { display: none; }
 
             .hero { padding: 80px 16px 60px; min-height: auto; }
             .hero h1 { font-size: 1.85rem; line-height: 1.25; margin-bottom: 16px; }
-            .hero p { font-size: 0.95rem; margin-bottom: 26px; }
+            .hero p { font-size: 0.95rem; margin-bottom: 24px; }
             
-            .brands-pill { font-size: 0.72rem; padding: 6px 12px; gap: 8px; margin-bottom: 20px; }
+            .badge-50th { font-size: 0.72rem; padding: 6px 14px; margin-bottom: 16px; }
+            .brands-grid-hero { gap: 6px; margin-bottom: 18px; }
+            .brand-chip { font-size: 0.72rem; padding: 4px 10px; }
+
             .hero-actions { flex-direction: column; width: 100%; gap: 10px; }
             .btn-action { width: 100%; justify-content: center; padding: 13px 18px; font-size: 0.92rem; }
             
             .section { padding: 60px 16px; }
-            .section-header { margin-bottom: 36px; }
+            .section-header { margin-bottom: 34px; }
             .section-header h2 { font-size: 1.85rem; }
             
             .service-grid { grid-template-columns: 1fr; }
-            .service-card-body { padding: 20px; }
+            .service-card-body { padding: 18px; }
             
             .contact-box { padding: 16px; gap: 14px; }
             .contact-icon { width: 40px; height: 40px; font-size: 1.1rem; }
@@ -393,12 +433,12 @@
         }
     </style>
 
-    <!-- SCHEMA LOCAL BUSINESS -->
+    <!-- SCHEMA LOCAL BUSINESS & AUTO REPAIR -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "AutoRepair",
-      "name": "Class BMW Özel Servis",
+      "name": "Class BMW & Premium Özel Servis",
       "image": "1.jpeg",
       "telephone": "+905423031535",
       "sameAs": [
@@ -431,13 +471,24 @@
     <!-- NAVBAR -->
     <header>
         <div class="nav-container">
+            <!-- 50. YIL AMBLEMİ İLE LOGO -->
             <div class="logo-wrap">
-                <div class="m-stripe-logo">
-                    <div class="m-s-1"></div>
-                    <div class="m-s-2"></div>
-                    <div class="m-s-3"></div>
+                <svg class="logo-50th" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="48" fill="#ffffff" stroke="#080a0e" stroke-width="2"/>
+                    <path d="M50 8 A42 42 0 0 1 92 50 L77 50 A27 27 0 0 0 50 23 Z" fill="#008AC9"/>
+                    <path d="M92 50 A42 42 0 0 1 50 92 L50 77 A27 27 0 0 0 77 50 Z" fill="#16588E"/>
+                    <path d="M50 92 A42 42 0 0 1 8 50 L23 50 A27 27 0 0 0 50 77 Z" fill="#E7222E"/>
+                    <path d="M8 50 A42 42 0 0 1 50 8 L50 23 A27 27 0 0 0 23 50 Z" fill="#008AC9"/>
+                    <circle cx="50" cy="50" r="25" fill="#080a0e" stroke="#ffffff" stroke-width="2"/>
+                    <path d="M50 27 A23 23 0 0 1 73 50 L50 50 Z" fill="#0066B1"/>
+                    <path d="M50 50 L27 50 A23 23 0 0 1 50 27 Z" fill="#ffffff"/>
+                    <path d="M50 50 L50 73 A23 23 0 0 1 27 50 Z" fill="#0066B1"/>
+                    <path d="M50 50 L73 50 A23 23 0 0 1 50 73 Z" fill="#ffffff"/>
+                </svg>
+                <div class="logo-text-box">
+                    <a href="#" class="logo">CLASS <span>BMW</span></a>
+                    <span class="logo-sub">Özel Servis & Yedek Parça</span>
                 </div>
-                <a href="#" class="logo">CLASS <span>BMW</span></a>
             </div>
             
             <nav class="nav-links">
@@ -461,15 +512,32 @@
         <!-- HERO (GİRİŞ) -->
         <section class="hero">
             <div class="hero-content">
-                <div class="brands-pill">
-                    <span>BMW</span> <span class="dot">•</span>
-                    <span>PORSCHE</span> <span class="dot">•</span>
-                    <span>AUDI</span> <span class="dot">•</span>
-                    <span>MERCEDES</span> <span class="dot">•</span>
-                    <span>LAND ROVER</span>
+                <div class="badge-50th">
+                    <svg viewBox="0 0 100 100" style="width:20px;height:20px;">
+                        <circle cx="50" cy="50" r="48" fill="#fff"/>
+                        <path d="M50 8 A42 42 0 0 1 92 50 L77 50 A27 27 0 0 0 50 23 Z" fill="#008AC9"/>
+                        <path d="M92 50 A42 42 0 0 1 50 92 L50 77 A27 27 0 0 0 77 50 Z" fill="#16588E"/>
+                        <path d="M50 92 A42 42 0 0 1 8 50 L23 50 A27 27 0 0 0 50 77 Z" fill="#E7222E"/>
+                        <path d="M8 50 A42 42 0 0 1 50 8 L50 23 A27 27 0 0 0 23 50 Z" fill="#008AC9"/>
+                        <circle cx="50" cy="50" r="25" fill="#080a0e"/>
+                        <path d="M50 27 A23 23 0 0 1 73 50 L50 50 Z" fill="#0066B1"/>
+                        <path d="M50 50 L27 50 A23 23 0 0 1 50 27 Z" fill="#ffffff"/>
+                        <path d="M50 50 L50 73 A23 23 0 0 1 27 50 Z" fill="#0066B1"/>
+                        <path d="M50 50 L73 50 A23 23 0 0 1 50 73 Z" fill="#ffffff"/>
+                    </svg>
+                    <span>BMW ///M & PREMIUM ÖZEL SERVİSİ</span>
                 </div>
-                <h1>Şanlıurfa'da Üst Segment <br>Araç Bakım & Onarımı</h1>
-                <p>Evren Sanayi Sitesi'nde orijinal arıza tespiti, garantili periyodik bakım ve kusursuz mekanik revizyon çözümleri.</p>
+
+                <div class="brands-grid-hero">
+                    <span class="brand-chip">BMW</span>
+                    <span class="brand-chip">MERCEDES-BENZ</span>
+                    <span class="brand-chip">PORSCHE</span>
+                    <span class="brand-chip">AUDI</span>
+                    <span class="brand-chip">LAND ROVER</span>
+                </div>
+
+                <h1>Şanlıurfa'da Üst Segment <br><span class="highlight">Bakım, Onarım & Yedek Parça</span></h1>
+                <p>Evren Sanayi Sitesi'nde orijinal arıza tespiti, garantili mekanik tamir ve geniş yedek parça desteği ile aracınız uzman ellerde.</p>
                 <div class="hero-actions">
                     <a href="https://wa.me/905423031535" class="btn-action wa" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp'tan Yazın</a>
                     <a href="tel:+905423031535" class="btn-action phone"><i class="fas fa-phone-alt"></i> İbrahim Usta'yı Arayın</a>
@@ -484,10 +552,16 @@
             <div class="container about-grid">
                 <div class="about-text">
                     <span class="section-badge">Tecrübe & Güven</span>
-                    <h2>Kusursuz İşçilik, Orijinal Standartlar</h2>
-                    <p>Class BMW Özel Servis, Şanlıurfa Evren Sanayi Sitesi'nde premium araç sahiplerine yüksek standartlarda bakım desteği verir. Arıza tespitinde deneme-yanılma yapmadan, araçların orijinal diagnostik protokollerine tam uyumla çalışılır.</p>
-                    <p>BMW başta olmak üzere tüm Alman ve İngiliz grubu araçların mekanik, elektronik ve periyodik ihtiyaçları uzman ustalarımız tarafından garantili olarak karşılanır.</p>
+                    <h2>Alman & İngiliz Segmentinde Uzman Kadro</h2>
+                    <p>Class BMW Özel Servis, Evren Sanayi Sitesi'nde yalnızca BMW değil; <strong>Mercedes-Benz, Porsche, Audi ve Land Rover</strong> grubu araçların da periyodik bakım, ağır mekanik onarım ve yedek parça gereksinimlerini karşılamaktadır.</p>
+                    <p>Deneme-yanılma yapmadan, araçların fabrika standartlarına ve orijinal diagnostik protokollerine tam uyumlu olarak çalışılır.</p>
                     
+                    <div class="specialty-tags">
+                        <span>Orijinal Yedek Parça</span>
+                        <span>Motor & Şanzıman Revizyonu</span>
+                        <span>Elektronik Diagnostik</span>
+                    </div>
+
                     <div class="mechanic-cards">
                         <div class="m-card chief">
                             <h4>İbrahim Usta</h4>
@@ -512,38 +586,48 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-badge">Hizmetlerimiz</span>
-                    <h2>Profesyonel Servis Alanları</h2>
-                    <p>Aracınızın motor, mekanik ve elektronik sağlığı için en güncel ekipmanlarla hizmetinizdeyiz.</p>
+                    <h2>Kapsamlı Servis ve Yedek Parça</h2>
+                    <p>Tüm üst segment araçların mekanik, elektronik ve parça ihtiyaçlarına profesyonel çözümler sunuyoruz.</p>
                 </div>
 
                 <div class="service-grid">
                     <div class="service-card">
                         <div class="service-card-media">
-                            <img src="6.jpeg" alt="BMW Periyodik Bakım ve Yağ Değişimi">
+                            <img src="6.jpeg" alt="BMW ve Üst Segment Periyodik Bakım">
                         </div>
                         <div class="service-card-body">
                             <h3><i class="fas fa-oil-can"></i> Periyodik & Sıvı Bakımı</h3>
-                            <p>Orijinal onaylı motor yağları, filtre değişimleri, triger/zincir set bakımları ve sıvı kontrolleri eksiksiz uygulanır.</p>
+                            <p>BMW Longlife, Mercedes ve Porsche onaylı motor yağları, orijinal filtre setleri ve triger/zincir bakımları.</p>
                         </div>
                     </div>
 
                     <div class="service-card">
                         <div class="service-card-media">
-                            <img src="3.jpeg" alt="BMW ve Land Rover Mekanik Onarım">
+                            <img src="3.jpeg" alt="BMW, Audi ve Land Rover Mekanik Onarım">
                         </div>
                         <div class="service-card-body">
                             <h3><i class="fas fa-wrench"></i> Mekanik Onarım & Alt Takım</h3>
-                            <p>Motor revizyonu, otomatik ve manuel şanzıman onarımı, fren sistemi, yürüyen aksam ve süspansiyon tamiratı.</p>
+                            <p>Motor revizyonu, otomatik şanzıman onarımı, fren sistemleri, diferansiyel ve hava süspansiyon tamiri.</p>
                         </div>
                     </div>
 
                     <div class="service-card">
                         <div class="service-card-media">
-                            <img src="5.jpeg" alt="Orijinal Bilgisayarlı Arıza Tespiti">
+                            <img src="5.jpeg" alt="Orijinal Test Cihazlarıyla Arıza Tespiti">
                         </div>
                         <div class="service-card-body">
                             <h3><i class="fas fa-microchip"></i> Elektronik Arıza Tespiti</h3>
-                            <p>Orijinal diagnostik yazılımlar ve test cihazlarıyla elektriksel ve beyin arızalarının tespiti ve çözümü.</p>
+                            <p>Orijinal diagnostik test cihazlarıyla beyin, sensör, elektrik ve gizli özellik programlama işlemleri.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-media">
+                            <img src="1.jpeg" alt="Şanlıurfa Orijinal Yedek Parça">
+                        </div>
+                        <div class="service-card-body">
+                            <h3><i class="fas fa-boxes-stacked"></i> Orijinal Yedek Parça</h3>
+                            <p>BMW, Mercedes-Benz, Audi, Porsche ve Land Rover için garantili OEM ve orijinal yedek parça temini.</p>
                         </div>
                     </div>
                 </div>
@@ -614,7 +698,7 @@
             <a href="https://www.instagram.com/class_bmw_urfa" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="https://wa.me/905423031535" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
-        <p class="footer-copy">&copy; 2026 Class BMW Özel Servis — Evren Sanayi Sitesi / Şanlıurfa. Tüm Hakları Saklıdır.</p>
+        <p class="footer-copy">&copy; 2026 Class BMW Özel Servis & Yedek Parça — Evren Sanayi Sitesi / Şanlıurfa. Tüm Hakları Saklıdır.</p>
     </footer>
 
 </body>
